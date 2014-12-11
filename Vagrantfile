@@ -5,7 +5,7 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  	config.vm.box = "ubuntu1404-opsworks"
+  config.vm.box = "virtualbox/ubuntu1404-opsworks.box"
 
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "cookbooks/"
